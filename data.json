@@ -1,0 +1,22 @@
+{
+    "fr": {
+        "name": "Kristóf Attila Simády",
+        "title": "Docteur-Ingénieur R&D | Simulation & Calcul Scientifique",
+        "location": "Clermont-Ferrand, France",
+        "summary": "Docteur-Ingénieur spécialisé en fiabilité mécanique et calcul scientifique...",
+        "labels": {
+            "networks": "Réseaux Professionnels",
+            "repos": "Dépôts GitHub Sélectionnés"
+        }
+    },
+    "en": {
+        "name": "Kristóf Attila Simády",
+        "title": "R&D Doctor-Engineer | Simulation & Scientific Computing",
+        "location": "Clermont-Ferrand, France",
+        "summary": "Doctor-Engineer specializing in mechanical reliability and scientific computing...",
+        "labels": {
+            "networks": "Professional Networks",
+            "repos": "Selected GitHub Repositories"
+        }
+    }
+}

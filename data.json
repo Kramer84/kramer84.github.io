@@ -1,22 +1,32 @@
 {
     "fr": {
-        "name": "Kristóf Attila Simády",
+        "name": "Kristóf A. Simády",
         "title": "Docteur-Ingénieur R&D | Fiabilité & Calcul Scientifique",
         "location": "Clermont-Ferrand, France",
         "summary": "Docteur-Ingénieur spécialisé en fiabilité mécanique et calcul scientifique. Expert dans l'automatisation de workflows de simulation et la création de pipelines de génération de données. Développeur Python expérimenté dans l'optimisation, les modèles d'incertitudes et le traitement de données. Approche pragmatique combinant rigueur théorique et prototypage.",
         "labels": {
             "networks": "Réseaux Professionnels",
             "repos": "Dépôts GitHub Sélectionnés"
-        }
+        },
+        "repositories": [
+            {"name": "pyfqmr-Fast-Quadric-Mesh-Reduction", "url": "https://github.com/Kramer84/pyfqmr-Fast-Quadric-Mesh-Reduction"},
+            {"name": "otaf-Open-Tolerance-Analysis-Framework", "url": "https://github.com/Kramer84/otaf"},
+            {"name": "KarhunenLoeveFieldSensitivity", "url": "https://github.com/Kramer84/KarhunenLoeveFieldSensitivity"}
+        ]
     },
     "en": {
-        "name": "Kristóf Attila Simády",
+        "name": "Kristóf A. Simády",
         "title": "PhD-Engineer | Reliability & Scientific Computing",
         "location": "Clermont-Ferrand, France",
         "summary": "PhD-Engineer specializing in mechanical reliability and scientific computing. Expert in automating simulation workflows and building data-generation pipelines. Experienced Python developer in optimization, uncertainty modeling, and data processing. Pragmatic approach blending theoretical rigor with prototyping.",
         "labels": {
             "networks": "Professional Networks",
             "repos": "Selected GitHub Repositories"
-        }
+        },
+        "repositories": [
+            {"name": "pyfqmr-Fast-Quadric-Mesh-Reduction", "url": "https://github.com/Kramer84/pyfqmr-Fast-Quadric-Mesh-Reduction"},
+            {"name": "otaf-Open-Tolerance-Analysis-Framework", "url": "https://github.com/Kramer84/otaf"},
+            {"name": "KarhunenLoeveFieldSensitivity", "url": "https://github.com/Kramer84/KarhunenLoeveFieldSensitivity"}
+        ]
     }
 }

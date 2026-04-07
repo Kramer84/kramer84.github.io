@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <meta name="description" content="Portfolio of Kristóf Attila Simády, R&D Doctor-Engineer specializing in Simulation & Scientific Computing.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kristóf Attila Simády - Profil Professionnel">
+    <meta property="og:description" content="Docteur-Ingénieur R&D | Simulation & Calcul Scientifique">
+    <meta property="og:image" content="./data/DSC4391.JPG">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <title>Kristóf A. Simády - Profil Professionnel</title>
+    <title data-key="tab_title">K.A. Simády</title>
 
 
     <link rel="stylesheet" href="style.css">
@@ -15,21 +24,21 @@
 
 
     <div class="container">
-        <img src="./data/DSC4391.JPG" alt="Profile Picture" class="profile-img">
-
         <div class="lang-switcher">
             <button onclick="switchLang('fr')">FR</button> |
             <button onclick="switchLang('en')">EN</button>
         </div>
 
+        <img src="./data/DSC4391.JPG" alt="Profile Picture" class="profile-img">
+
         <h1 data-key="name"></h1>
         <p class="subtitle" data-key="title"></p>
 
         <div class="contact-info">
-            📍 <span data-key="location"></span><br>
-            ✉️ <a href="mailto:kristof.simady@protonmail.com">kristof.simady@protonmail.com</a><br>
-            📞 +33 6 69 39 73 23<br>
-            🚗 Permis B/A2
+            <i class="fa-solid fa-location-dot"></i> <span data-key="location"></span><br>
+            <i class="fa-solid fa-envelope"></i> <a href="mailto:kristof.simady@protonmail.com" data-key="email"></a><br>
+            <i class="fa-solid fa-phone"></i> <span data-key="phone"></span><br>
+            <i class="fa-solid fa-car"></i> <span data-key="driving_license"></span>
         </div>
 
         <div class="summary" data-key="summary"></div>
@@ -40,7 +49,8 @@
 
         <h2 data-key="labels.repos"></h2>
         <div id="repo-list">
-            </div>
+            <p style="color: #6c757d; font-size: 0.9rem;">⏳ Loading repositories...</p>
+        </div>
     </div>
 
 </body>

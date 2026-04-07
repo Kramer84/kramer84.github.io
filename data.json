@@ -1,9 +1,13 @@
 {
     "fr": {
+        "tab_title":"K.A. Simády - Profil Professionnel",
         "name": "Kristóf A. Simády",
         "title": "Docteur-Ingénieur R&D | Fiabilité & Calcul Scientifique",
         "location": "Clermont-Ferrand, France",
         "summary": "Docteur-Ingénieur spécialisé en fiabilité mécanique et calcul scientifique. Expert dans l'automatisation de workflows de simulation et la création de pipelines de génération de données. Développeur Python expérimenté dans l'optimisation, les modèles d'incertitudes et le traitement de données. Approche pragmatique combinant rigueur théorique et prototypage.",
+        "email": "kristof.simady@protonmail.com",
+        "phone": "+33 6 69 39 73 23",
+        "driving_license": "Permis B/A2",
         "labels": {
             "networks": "Réseaux Professionnels",
             "repos": "Dépôts GitHub Sélectionnés"
@@ -15,10 +19,14 @@
         ]
     },
     "en": {
+        "tab_title":"K.A. Simády - Professionnal Profile",
         "name": "Kristóf A. Simády",
         "title": "PhD-Engineer | Reliability & Scientific Computing",
         "location": "Clermont-Ferrand, France",
         "summary": "PhD-Engineer specializing in mechanical reliability and scientific computing. Expert in automating simulation workflows and building data-generation pipelines. Experienced Python developer in optimization, uncertainty modeling, and data processing. Pragmatic approach blending theoretical rigor with prototyping.",
+        "email": "kristof.simady@protonmail.com",
+        "phone": "+33 6 69 39 73 23",
+        "driving_license": "Driver's License B/A2",
         "labels": {
             "networks": "Professional Networks",
             "repos": "Selected GitHub Repositories"

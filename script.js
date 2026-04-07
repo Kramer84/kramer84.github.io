@@ -21,6 +21,8 @@ async function switchLang(lang) {
         a.className = 'btn btn-repo';
         a.target = '_blank';
         a.innerText = repo.name;
+        // Use innerHTML to combine the FontAwesome icon with the repository name
+        a.innerHTML = `<i class="fa-solid fa-code-branch"></i> ${repo.name}`;
         repoList.appendChild(a); // Add the link to the page
     });
 

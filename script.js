@@ -11,6 +11,19 @@ async function switchLang(lang) {
         el.innerText = value;
     });
 
+    // Dynamically build the repository list
+    const repoList = document.getElementById('repo-list');
+    repoList.innerHTML = ''; // Clear out the old list
+
+    content.repositories.forEach(repo => {
+        const a = document.createElement('a');
+        a.href = repo.url;
+        a.className = 'btn btn-repo';
+        a.target = '_blank';
+        a.innerText = repo.name;
+        repoList.appendChild(a); // Add the link to the page
+    });
+
     // Save preference
     localStorage.setItem('preferredLang', lang);
 }

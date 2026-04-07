@@ -1,0 +1,148 @@
+<repo-to-text>
+Directory: kramer84.github.io
+
+Directory Structure:
+<directory_structure>
+.
+.
+├── ./data
+├── ./data.json
+├── ./.git
+│   ├── ./.git/branches
+│   ├── ./.git/config
+│   ├── ./.git/description
+│   ├── ./.git/HEAD
+│   ├── ./.git/hooks
+│   │   ├── ./.git/hooks/applypatch-msg.sample
+│   │   ├── ./.git/hooks/commit-msg.sample
+│   │   ├── ./.git/hooks/fsmonitor-watchman.sample
+│   │   ├── ./.git/hooks/post-update.sample
+│   │   ├── ./.git/hooks/pre-applypatch.sample
+│   │   ├── ./.git/hooks/pre-commit.sample
+│   │   ├── ./.git/hooks/pre-merge-commit.sample
+│   │   ├── ./.git/hooks/prepare-commit-msg.sample
+│   │   ├── ./.git/hooks/pre-push.sample
+│   │   ├── ./.git/hooks/pre-rebase.sample
+│   │   ├── ./.git/hooks/pre-receive.sample
+│   │   ├── ./.git/hooks/push-to-checkout.sample
+│   │   ├── ./.git/hooks/sendemail-validate.sample
+│   │   └── ./.git/hooks/update.sample
+│   ├── ./.git/index
+│   ├── ./.git/info
+│   │   └── ./.git/info/exclude
+│   ├── ./.git/logs
+│   │   ├── ./.git/logs/HEAD
+│   │   └── ./.git/logs/refs
+│   │       ├── ./.git/logs/refs/heads
+│   │       │   └── ./.git/logs/refs/heads/main
+│   │       └── ./.git/logs/refs/remotes
+│   │           └── ./.git/logs/refs/remotes/origin
+│   │               └── ./.git/logs/refs/remotes/origin/HEAD
+│   ├── ./.git/objects
+│   │   ├── ./.git/objects/info
+│   │   └── ./.git/objects/pack
+│   │       ├── ./.git/objects/pack/pack-d0dddd8026255455242482da26a70e306a5650d5.idx
+│   │       ├── ./.git/objects/pack/pack-d0dddd8026255455242482da26a70e306a5650d5.pack
+│   │       └── ./.git/objects/pack/pack-d0dddd8026255455242482da26a70e306a5650d5.rev
+│   ├── ./.git/packed-refs
+│   └── ./.git/refs
+│       ├── ./.git/refs/heads
+│       │   └── ./.git/refs/heads/main
+│       ├── ./.git/refs/remotes
+│       │   └── ./.git/refs/remotes/origin
+│       │       └── ./.git/refs/remotes/origin/HEAD
+│       └── ./.git/refs/tags
+├── ./index.html
+└── ./script.js
+
+</directory_structure>
+
+<content full_path="data.json">
+{
+    "fr": {
+        "name": "Kristóf Attila Simády",
+        "title": "Docteur-Ingénieur R&D | Simulation & Calcul Scientifique",
+        "location": "Clermont-Ferrand, France",
+        "summary": "Docteur-Ingénieur spécialisé en fiabilité mécanique et calcul scientifique...",
+        "labels": {
+            "networks": "Réseaux Professionnels",
+            "repos": "Dépôts GitHub Sélectionnés"
+        }
+    },
+    "en": {
+        "name": "Kristóf Attila Simády",
+        "title": "R&D Doctor-Engineer | Simulation & Scientific Computing",
+        "location": "Clermont-Ferrand, France",
+        "summary": "Doctor-Engineer specializing in mechanical reliability and scientific computing...",
+        "labels": {
+            "networks": "Professional Networks",
+            "repos": "Selected GitHub Repositories"
+        }
+    }
+}
+
+</content>
+
+<content full_path="script.js">
+async function switchLang(lang) {
+    const response = await fetch('./data.json');
+    const data = await response.json();
+    const content = data[lang];
+
+    // Update simple fields
+    document.querySelectorAll('[data-key]').forEach(el => {
+        const key = el.getAttribute('data-key');
+        // Handle nested keys like labels.networks
+        const value = key.split('.').reduce((obj, i) => obj[i], content);
+        el.innerText = value;
+    });
+
+    // Save preference
+    localStorage.setItem('preferredLang', lang);
+}
+
+// Load default language on start
+window.onload = () => {
+    const savedLang = localStorage.getItem('preferredLang') || 'fr';
+    switchLang(savedLang);
+};
+
+</content>
+
+<content full_path="index.html">
+:root {
+    --primary-color: #0077b5;
+    --bg-color: #f8f9fa;
+    --text-dark: #2c3e50;
+}
+
+<div class="lang-switcher">
+    <button onclick="switchLang('fr')">FR</button> | 
+    <button onclick="switchLang('en')">EN</button>
+</div>
+
+<div class="container">
+    <img src="./data/DSC4391.JPG" alt="Profile Picture" class="profile-img">
+    
+    <h1 data-key="name"></h1>
+    <p class="subtitle" data-key="title"></p>
+    
+    <div class="contact-info">
+        📍 <span data-key="location"></span><br>
+        ✉️ <a href="mailto:ksimady@sigma-clermont.fr">ksimady@sigma-clermont.fr</a><br>
+        📞 +33 6 69 39 73 23
+    </div>
+
+    <div class="summary" data-key="summary"></div>
+
+    <h2 data-key="labels.networks"></h2>
+    <a href="https://www.linkedin.com/..." class="btn btn-linkedin">LinkedIn</a>
+    
+    <h2 data-key="labels.repos"></h2>
+    <div id="repo-list">
+        </div>
+</div>
+
+</content>
+
+</repo-to-text>

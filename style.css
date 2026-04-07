@@ -107,6 +107,26 @@ h2 {
     font-size: 0.95rem;
     font-weight: 600;
 }
-.btn-repo::before {
-    content: "📦 ";
+
+.lang-switcher {
+    margin-bottom: 20px;
+}
+.lang-switcher button {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.lang-switcher button:first-child {
+    border-radius: 20px 0 0 20px;
+}
+.lang-switcher button:last-child {
+    border-radius: 0 20px 20px 0;
+}
+.lang-switcher button:hover {
+    background: var(--primary-color);
+    color: white;
 }

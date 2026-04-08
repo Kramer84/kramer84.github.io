@@ -27,8 +27,8 @@ body {
 }
 
 .profile-img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     object-fit: cover; /* Ensures the image doesn't stretch if it's not perfectly square */
     border-radius: 50%; /* Makes the image a perfect circle */
     border: 3px solid var(--primary-color); /* Uses the blue color you defined in :root */

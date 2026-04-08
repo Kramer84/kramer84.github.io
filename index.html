@@ -24,12 +24,13 @@
 
 
     <div class="container">
-        <div class="lang-switcher">
-            <button onclick="switchLang('fr')">FR</button> |
-            <button onclick="switchLang('en')">EN</button>
-        </div>
 
         <img src="./data/DSC4391.JPG" alt="Profile Picture" class="profile-img">
+
+        <div class="lang-switcher">
+            <button onclick="switchLang('fr')">FR</button>
+            <button onclick="switchLang('en')">EN</button>
+        </div>
 
         <h1 data-key="name"></h1>
         <p class="subtitle" data-key="title"></p>
@@ -42,6 +43,10 @@
         </div>
 
         <div class="summary" data-key="summary"></div>
+
+        <h2 data-key="labels.skills"></h2>
+        <div id="skills-list" class="skills-container">
+            </div>
 
         <h2 data-key="labels.networks"></h2>
         <a href="https://www.linkedin.com/in/kristof-attila-simády-765615153/" class="btn btn-linkedin" target="_blank">LinkedIn</a>

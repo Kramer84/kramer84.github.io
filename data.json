@@ -2,39 +2,59 @@
     "fr": {
         "tab_title":"K.A. Simády - Profil Professionnel",
         "name": "Kristóf A. Simády",
-        "title": "Docteur-Ingénieur R&D | Fiabilité & Calcul Scientifique",
+        "title": "Docteur-Ingénieur R&D | Mécanique, Simulation & Data Science",
         "location": "Clermont-Ferrand, France",
-        "summary": "Docteur-Ingénieur spécialisé en fiabilité mécanique et calcul scientifique. Expert dans l'automatisation de workflows de simulation et la création de pipelines de génération de données. Développeur Python expérimenté dans l'optimisation, les modèles d'incertitudes et le traitement de données. Approche pragmatique combinant rigueur théorique et prototypage.",
+        "summary": "Docteur-Ingénieur (SIGMA Clermont) alliant expertise en mécanique des structures et data science industrielle. Spécialiste du calcul scientifique haute performance (Python/Cython) et de la modélisation probabiliste. Je transforme des données physiques et industrielles complexes en outils d'aide à la décision via le prototypage rapide de pipelines de simulation et d'algorithmes de machine learning.",
         "email": "kristof.simady@protonmail.com",
-        "phone": "+33 6 69 39 73 23",
+        "phone": "Contact par mail",
         "driving_license": "Permis B/A2",
         "labels": {
+            "skills": "Compétences",
             "networks": "Réseaux Professionnels",
             "repos": "Dépôts GitHub Sélectionnés"
         },
+        "skills": [
+            "Python (ML & Sci)", "Cython / C++", "Data Science", "Analyse Statistique", "Simulation Numérique", "Ingénierie Mécanique", "Git"
+        ],
         "repositories": [
-            {"name": "pyfqmr-Fast-Quadric-Mesh-Reduction", "url": "https://github.com/Kramer84/pyfqmr-Fast-Quadric-Mesh-Reduction"},
-            {"name": "otaf-Open-Tolerance-Analysis-Framework", "url": "https://github.com/Kramer84/otaf"},
-            {"name": "KarhunenLoeveFieldSensitivity", "url": "https://github.com/Kramer84/KarhunenLoeveFieldSensitivity"}
+            {"name": "pyfqmr-Fast-Quadric-Mesh-Reduction",
+            "url": "https://github.com/Kramer84/pyfqmr-Fast-Quadric-Mesh-Reduction",
+            "description": "Réduction de maillage 3D haute performance (Cython/C++). Plus de 90 étoiles sur GitHub et disponible sur PyPI."},
+            {"name": "otaf-Open-Tolerance-Analysis-Framework",
+            "url": "https://github.com/Kramer84/otaf",
+            "description": "Module de recherche pour l'analyse statistique des tolérances en présence d'incertitude épistémique."},
+            {"name": "KarhunenLoeveFieldSensitivity",
+            "url": "https://github.com/Kramer84/KarhunenLoeveFieldSensitivity",
+            "description": "Analyse de sensibilité pour variables mixtes (champs stochastiques et scalaires)."}
         ]
     },
     "en": {
         "tab_title":"K.A. Simády - Professionnal Profile",
         "name": "Kristóf A. Simády",
-        "title": "PhD-Engineer | Reliability & Scientific Computing",
+        "title": "PhD-Engineer | Mechanical Engineering, Simulation & Data Science",
         "location": "Clermont-Ferrand, France",
-        "summary": "PhD-Engineer specializing in mechanical reliability and scientific computing. Expert in automating simulation workflows and building data-generation pipelines. Experienced Python developer in optimization, uncertainty modeling, and data processing. Pragmatic approach blending theoretical rigor with prototyping.",
+        "summary": "PhD-Engineer bridging structural mechanics and industrial data science. Specialist in high-performance scientific computing (Python/Cython) and probabilistic modeling. I transform complex physical and industrial data into strategic decision-making tools through rapid prototyping of simulation pipelines and machine learning algorithms.",
         "email": "kristof.simady@protonmail.com",
-        "phone": "+33 6 69 39 73 23",
+        "phone": "Contact by mail",
         "driving_license": "Driver's License B/A2",
         "labels": {
+            "skills": "Skills",
             "networks": "Professional Networks",
             "repos": "Selected GitHub Repositories"
         },
+        "skills": [
+            "Python (ML & Sci)", "Cython / C++", "Data Science", "Statistical Analysis", "Numerical Simulation", "Mechanical Engineering", "Git"
+        ],
         "repositories": [
-            {"name": "pyfqmr-Fast-Quadric-Mesh-Reduction", "url": "https://github.com/Kramer84/pyfqmr-Fast-Quadric-Mesh-Reduction"},
-            {"name": "otaf-Open-Tolerance-Analysis-Framework", "url": "https://github.com/Kramer84/otaf"},
-            {"name": "KarhunenLoeveFieldSensitivity", "url": "https://github.com/Kramer84/KarhunenLoeveFieldSensitivity"}
+            {"name": "pyfqmr-Fast-Quadric-Mesh-Reduction",
+            "url": "https://github.com/Kramer84/pyfqmr-Fast-Quadric-Mesh-Reduction",
+            "description": "High-performance 3D mesh reduction (Cython/C++). 90+ stars on GitHub & available on PyPI."},
+            {"name": "otaf-Open-Tolerance-Analysis-Framework",
+            "url": "https://github.com/Kramer84/otaf",
+            "description": "Research framework for statistical tolerance analysis under epistemic uncertainty."},
+            {"name": "KarhunenLoeveFieldSensitivity",
+            "url": "https://github.com/Kramer84/KarhunenLoeveFieldSensitivity",
+            "description": "Sensitivity analysis for mixed inputs (Scalar & stochastic fields)."}
         ]
     }
 }

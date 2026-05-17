@@ -21,6 +21,23 @@ async function switchLang(lang) {
         skillsList.appendChild(span);
     });
 
+    // Dynamically build the publications list
+    const pubList = document.getElementById('publications-list');
+    pubList.innerHTML = ''; 
+    if (content.publications && content.publications.length > 0) {
+        content.publications.forEach(pub => {
+            const a = document.createElement('a');
+            a.href = pub.url;
+            a.className = 'btn btn-repo'; 
+            a.target = '_blank';
+            a.innerHTML = `
+                <span class="repo-name"><i class="fa-solid fa-book"></i> ${pub.title}</span>
+                <span class="repo-desc">${pub.description}</span>
+            `;
+            pubList.appendChild(a);
+        });
+    }
+
     // Dynamically build the repository list
     const repoList = document.getElementById('repo-list');
     repoList.innerHTML = ''; // Clear out the old list

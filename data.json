@@ -2,19 +2,20 @@
     "fr": {
         "tab_title":"K.A. Simády - Profil Professionnel",
         "name": "Kristóf A. Simády",
-        "title": "Docteur-Ingénieur R&D | Mécanique, Simulation & Data Science",
+        "title": "Docteur-Ingénieur R&D | Simulation, Mécanique & Calcul",
         "location": "Clermont-Ferrand, France",
-        "summary": "Docteur-Ingénieur (SIGMA Clermont) alliant expertise en mécanique des structures et data science industrielle. Spécialiste du calcul scientifique haute performance (Python/Cython) et de la modélisation probabiliste. Je transforme des données physiques et industrielles complexes en outils d'aide à la décision via le prototypage rapide de pipelines de simulation et d'algorithmes de machine learning.",
+        "summary": "Docteur-Ingénieur doté d'une forte capacité d'abstraction, appliquant la modélisation mathématique, l'analyse statistique et la programmation à des domaines variés (mécanique, fiabilité, bio-ingénierie). Je conçois les codes de calcul (Python/C++) comme des outils agnostiques pour résoudre des problèmes physiques complexes. Je m'implique dans la recherche théorique tout en conservant une forte culture technique de terrain et de fabrication.",
         "email": "kristof.simady@protonmail.com",
         "phone": "Contact par mail",
         "driving_license": "Permis B/A2",
         "labels": {
             "skills": "Compétences",
             "networks": "Réseaux Professionnels",
-            "repos": "Dépôts GitHub Sélectionnés"
+            "repos": "Dépôts GitHub Sélectionnés",
+            "publications": "Publications"
         },
         "skills": [
-            "Python (ML & Sci)", "Cython / C++", "Data Science", "Analyse Statistique", "Simulation Numérique", "Ingénierie Mécanique", "Git"
+            "Python (ML & Sci)", "Cython / C++", "Data Science", "Analyse Statistique", "Simulation Numérique", "Ingénierie Mécanique", "Git", "DICOM", "Analyse des tolérances", "Analyse de sensibilité", "Linux / Bash", "Couplage", "FreeCAD", "FEM", "LaTex", "Quantification d'incertitude"
         ],
         "repositories": [
             {"name": "pyfqmr-Fast-Quadric-Mesh-Reduction",
@@ -26,35 +27,47 @@
             {"name": "KarhunenLoeveFieldSensitivity",
             "url": "https://github.com/Kramer84/KarhunenLoeveFieldSensitivity",
             "description": "Analyse de sensibilité pour variables mixtes (champs stochastiques et scalaires)."}
+        ],        
+        "publications": [
+            {"title": "IMPRECISE PROBABILITIES AS AN ANSWER TO THE INDETERMINACY INHERENT TO MECHANICAL TOLERANCES",
+            "url": "https://doi.org/10.7712/120223.10344.19792",
+            "description": "UNCECOMP 2023. U - MS 11 - UNCERTAINTY QUANTIFICATION UNDER LIMITED DATA"}
         ]
+
     },
     "en": {
         "tab_title":"K.A. Simády - Professionnal Profile",
         "name": "Kristóf A. Simády",
         "title": "PhD-Engineer | Mechanical Engineering, Simulation & Data Science",
         "location": "Clermont-Ferrand, France",
-        "summary": "PhD-Engineer bridging structural mechanics and industrial data science. Specialist in high-performance scientific computing (Python/Cython) and probabilistic modeling. I transform complex physical and industrial data into strategic decision-making tools through rapid prototyping of simulation pipelines and machine learning algorithms.",
+        "summary": "PhD-Engineer with a strong capacity for abstraction, applying mathematical modeling, statistical analysis, and programming across diverse fields (mechanics, reliability, bio-engineering). I view software (Python/C++) as an agnostic tool to solve complex physical problems. Deeply involved in both theoretical research and practical, hands-on engineering and fabrication.",
         "email": "kristof.simady@protonmail.com",
         "phone": "Contact by mail",
         "driving_license": "Driver's License B/A2",
         "labels": {
             "skills": "Skills",
             "networks": "Professional Networks",
-            "repos": "Selected GitHub Repositories"
+            "repos": "Selected GitHub Repositories",
+            "publications": "Publications"
         },
         "skills": [
-            "Python (ML & Sci)", "Cython / C++", "Data Science", "Statistical Analysis", "Numerical Simulation", "Mechanical Engineering", "Git"
+            "Python (ML & Sci)", "Cython / C++", "Data Science", "Statistical Analysis", "Numerical Simulation", "Mechanical Engineering", "Git", "DICOM", "Tolerance analysis", "Sensitivity analysis", "Linux / Bash", "Code coupling", "FreeCAD", "FEM", "LaTex", "Uncertainty quantification"
         ],
         "repositories": [
             {"name": "pyfqmr-Fast-Quadric-Mesh-Reduction",
             "url": "https://github.com/Kramer84/pyfqmr-Fast-Quadric-Mesh-Reduction",
-            "description": "High-performance 3D mesh reduction (Cython/C++). 90+ stars on GitHub & available on PyPI."},
+            "description": "High-performance 3D mesh reduction (Cython/C++). 90+ stars & available on PyPI."},
             {"name": "otaf-Open-Tolerance-Analysis-Framework",
             "url": "https://github.com/Kramer84/otaf",
-            "description": "Research framework for statistical tolerance analysis under epistemic uncertainty."},
+            "description": "Research framework for statistical tolerance analysis of over-constrained assemblies."},
             {"name": "KarhunenLoeveFieldSensitivity",
             "url": "https://github.com/Kramer84/KarhunenLoeveFieldSensitivity",
             "description": "Sensitivity analysis for mixed inputs (Scalar & stochastic fields)."}
+        ],
+        "publications": [
+            {"title": "IMPRECISE PROBABILITIES AS AN ANSWER TO THE INDETERMINACY INHERENT TO MECHANICAL TOLERANCES",
+            "url": "https://doi.org/10.7712/120223.10344.19792",
+            "description": "UNCECOMP 2023. U - MS 11 - UNCERTAINTY QUANTIFICATION UNDER LIMITED DATA"}
         ]
     }
 }

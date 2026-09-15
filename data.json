@@ -26,7 +26,13 @@
             "description": "Module de recherche pour l'analyse statistique des tolérances en présence d'incertitude épistémique."},
             {"name": "KarhunenLoeveFieldSensitivity",
             "url": "https://github.com/Kramer84/KarhunenLoeveFieldSensitivity",
-            "description": "Analyse de sensibilité pour variables mixtes (champs stochastiques et scalaires)."}
+            "description": "Analyse de sensibilité pour variables mixtes (champs stochastiques et scalaires)."},
+            {"name": "Dictation-Hub",
+            "url": "https://github.com/Kramer84/Dictation-Hub",
+            "description": "Outil local de transcription de la parole en texte basé sur « whisper.cpp », avec double post-traitement statique et basé sur l'IA, et déclenchement d'événements personnalisés."},
+            {"name": "DocPytestAgent",
+            "url": "https://github.com/Kramer84/DocPytestAgent",
+            "description": "Outil agentique pour la génération de cas tests et de documentation pour modules Python. Analyse du code source par AST, élaboration d'instructions ciblées complètes, récupération des résultats des modèles de langage (LLM), validation par rapport à un schéma Pydantic, puis intégration dans le code source."}
         ],        
         "publications": [
             {"title": "IMPRECISE PROBABILITIES AS AN ANSWER TO THE INDETERMINACY INHERENT TO MECHANICAL TOLERANCES",
@@ -62,7 +68,13 @@
             "description": "Research framework for statistical tolerance analysis of over-constrained assemblies."},
             {"name": "KarhunenLoeveFieldSensitivity",
             "url": "https://github.com/Kramer84/KarhunenLoeveFieldSensitivity",
-            "description": "Sensitivity analysis for mixed inputs (Scalar & stochastic fields)."}
+            "description": "Sensitivity analysis for mixed inputs (Scalar & stochastic fields)."},
+            {"name": "Dictation-Hub",
+            "url": "https://github.com/Kramer84/Dictation-Hub",
+            "description": "Local, whisper based, speech to text treanscription tool, with static and ai based post-processing, and custom event triggering."},
+            {"name": "DocPytestAgent",
+            "url": "https://github.com/Kramer84/DocPytestAgent",
+            "description": "An agent-based tool for generating test cases and documentation for Python modules. Analyzes the project structure, constructs complete prompts, gets the LLMs output, validates it against a Pydantic schema, and injects them into the source code."}
         ],
         "publications": [
             {"title": "IMPRECISE PROBABILITIES AS AN ANSWER TO THE INDETERMINACY INHERENT TO MECHANICAL TOLERANCES",

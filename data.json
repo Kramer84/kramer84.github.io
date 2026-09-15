@@ -29,7 +29,7 @@
             "description": "Analyse de sensibilité pour variables mixtes (champs stochastiques et scalaires)."},
             {"name": "Dictation-Hub",
             "url": "https://github.com/Kramer84/Dictation-Hub",
-            "description": "Outil local de transcription de la parole en texte basé sur « whisper.cpp », avec double post-traitement statique et basé sur l'IA, et déclenchement d'événements personnalisés."},
+            "description": "Outil local de transcription de la parole en texte basé sur 'whisper.cpp', avec double post-traitement statique et basé sur l'IA, et déclenchement d'événements personnalisés."},
             {"name": "DocPytestAgent",
             "url": "https://github.com/Kramer84/DocPytestAgent",
             "description": "Outil agentique pour la génération de cas tests et de documentation pour modules Python. Analyse du code source par AST, élaboration d'instructions ciblées complètes, récupération des résultats des modèles de langage (LLM), validation par rapport à un schéma Pydantic, puis intégration dans le code source."}

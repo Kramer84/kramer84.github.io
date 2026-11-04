@@ -1,0 +1,23 @@
+# Secrets
+.env
+.env.*
+!.env.template
+
+# Python (local preview server, helper scripts)
+.venv/
+__pycache__/
+*.pyc
+
+# Caches and build output
+.cache/
+node_modules/
+dist/
+build/
+_site/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~

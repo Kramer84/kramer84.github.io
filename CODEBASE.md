@@ -11,20 +11,16 @@
 
 ## Rendering (`script.js`)
 
-`switchLang(lang)` refetches `data.json` on every call, fills each `[data-key]` element (dotted keys such as `labels.skills` are nested lookups), then rebuilds the skills, publications and repository lists. The choice is saved in `localStorage` as `preferredLang`; the default is `fr`.
+`switchLang(lang)` loads `data.json` once, fills each `[data-key]` element (dotted keys such as `labels.skills` are nested lookups), then rebuilds the skills, publications, repository and other-project lists. It also sets `<html lang>` and marks the active language button. The choice is saved in `localStorage` as `preferredLang`; without one, French browsers get `fr` and all others `en`. If `data.json` fails, the fallback text in `index.html` stays.
 
 ## Images (`data/`)
 
 | File | Status |
 |------|--------|
-| `DSC_4401.png` | Profile picture, used by `index.html` |
-| `DSC4391.JPG` | `og:image` in `index.html` |
+| `DSC_4401.png` | Profile picture and `og:image` in `index.html` |
 | `DSC_4401.xcf` | GIMP file, not referenced by the page |
-| `DSC_4401.JPG`, `DSCGPT1.png`, `DSCGPT1BW.png`, `DSCGPT1.xcf` | Not referenced by the page |
+| `DSC4391.JPG`, `DSC_4401.JPG`, `DSCGPT1.png`, `DSCGPT1BW.png`, `DSCGPT1.xcf` | Not referenced by the page |
 
 ## Open questions
 
-- Which unreferenced images should go? Commit `b463688` says "remember the remove unused ones"; the owner has deferred this and will decide. Files stay in git history after removal, so deleting them does not unpublish them.
-- Is `noindex, nofollow` in `index.html` still wanted? The meta description and Open Graph tags suggest the page is meant to be shared.
-- `og:image` is the relative path `./data/DSC4391.JPG`. Hypothesis: link-preview crawlers need an absolute URL, so previews may show no image. Not tested.
-- The `og:image` (`DSC4391.JPG`) and the profile picture (`DSC_4401.png`) are different files. Is that intended?
+- Which unreferenced images should go? Commit `00b7e36` says "remember the remove unused ones"; the owner has deferred this and will decide. Files stay in git history after removal, so deleting them does not unpublish them.

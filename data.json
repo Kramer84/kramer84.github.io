@@ -1,85 +1,186 @@
 {
     "fr": {
-        "tab_title":"K.A. Simády - Profil Professionnel",
+        "tab_title": "K.A. Simády - Profil Professionnel",
         "name": "Kristóf A. Simády",
-        "title": "Docteur-Ingénieur R&D | Simulation, Mécanique & Calcul",
+        "title": "Docteur-Ingénieur R&D | Simulation & Calcul Scientifique",
         "location": "Clermont-Ferrand, France",
-        "summary": "Docteur-Ingénieur doté d'une forte capacité d'abstraction, appliquant la modélisation mathématique, l'analyse statistique et la programmation à des domaines variés (mécanique, fiabilité, bio-ingénierie). Je conçois les codes de calcul (Python/C++) comme des outils agnostiques pour résoudre des problèmes physiques complexes. Je m'implique dans la recherche théorique tout en conservant une forte culture technique de terrain et de fabrication.",
+        "summary": "Docteur de l'Université Clermont Auvergne (Institut Pascal, thèse soutenue le 8 septembre 2026) et ingénieur SIGMA Clermont. Je travaille sur l'analyse de tolérances, la fiabilité et la quantification d'incertitudes, y compris quand les données manquent. Je développe mes outils de calcul en Python et les publie en open source. Je construis et répare aussi du matériel : électronique, impression 3D, mécanique.",
         "email": "kristof.simady@protonmail.com",
-        "phone": "Contact par mail",
         "driving_license": "Permis B/A2",
         "labels": {
             "skills": "Compétences",
-            "networks": "Réseaux Professionnels",
-            "repos": "Dépôts GitHub Sélectionnés",
-            "publications": "Publications"
+            "repos": "Projets open source",
+            "publications": "Publications",
+            "other": "Autres projets"
         },
         "skills": [
-            "Python (ML & Sci)", "Cython / C++", "Data Science", "Analyse Statistique", "Simulation Numérique", "Ingénierie Mécanique", "Git", "DICOM", "Analyse des tolérances", "Analyse de sensibilité", "Linux / Bash", "Couplage", "FreeCAD", "FEM", "LaTeX", "Quantification d'incertitude"
+            "Quantification d'incertitudes",
+            "Analyse de sensibilité",
+            "Fiabilité",
+            "Analyse de tolérances",
+            "OpenTURNS",
+            "Simulation numérique",
+            "Siemens Simcenter / Nastran",
+            "Python scientifique",
+            "Cython / C++",
+            "PyTorch",
+            "Data Science",
+            "Maillages 3D",
+            "DICOM",
+            "FreeCAD",
+            "Git",
+            "Linux / Bash",
+            "LaTeX"
         ],
         "repositories": [
-            {"name": "pyfqmr-Fast-Quadric-Mesh-Reduction",
-            "url": "https://github.com/Kramer84/pyfqmr-Fast-Quadric-Mesh-Reduction",
-            "description": "Réduction de maillage 3D haute performance (Cython/C++). Plus de 90 étoiles sur GitHub et disponible sur PyPI."},
-            {"name": "otaf-Open-Tolerance-Analysis-Framework",
-            "url": "https://github.com/Kramer84/otaf",
-            "description": "Module de recherche pour l'analyse statistique des tolérances en présence d'incertitude épistémique."},
-            {"name": "KarhunenLoeveFieldSensitivity",
-            "url": "https://github.com/Kramer84/KarhunenLoeveFieldSensitivity",
-            "description": "Analyse de sensibilité pour variables mixtes (champs stochastiques et scalaires)."},
-            {"name": "Dictation-Hub",
-            "url": "https://github.com/Kramer84/Dictation-Hub",
-            "description": "Outil local de transcription de la parole en texte basé sur 'whisper.cpp', avec double post-traitement statique et basé sur l'IA, et déclenchement d'événements personnalisés."},
-            {"name": "DocPytestAgent",
-            "url": "https://github.com/Kramer84/DocPytestAgent",
-            "description": "Outil agentique pour la génération de cas tests et de documentation pour modules Python. Analyse du code source par AST, élaboration d'instructions ciblées complètes, récupération des résultats des modèles de langage (LLM), validation par rapport à un schéma Pydantic, puis intégration dans le code source."}
-        ],        
+            {
+                "name": "otaf (Open Tolerance Analysis Framework)",
+                "url": "https://github.com/Kramer84/otaf",
+                "description": "Framework Python d'analyse statistique des tolérances pour assemblages hyperstatiques, y compris sous incertitude épistémique. Issu de ma thèse.",
+                "links": [
+                    {
+                        "label": "Documentation",
+                        "url": "https://kramer84.github.io/otaf/"
+                    },
+                    {
+                        "label": "DOI Zenodo",
+                        "url": "https://doi.org/10.5281/zenodo.14639555"
+                    }
+                ]
+            },
+            {
+                "name": "pyfqmr (Fast Quadric Mesh Reduction)",
+                "url": "https://github.com/Kramer84/pyfqmr-Fast-Quadric-Mesh-Reduction",
+                "description": "Simplification de maillages 3D haute performance (Cython/C++), utilisée notamment dans ComfyUI-3D-Pack et nerf2mesh. Sur PyPI : environ 48 000 téléchargements par mois (novembre 2026), plus de 90 étoiles sur GitHub."
+            },
+            {
+                "name": "KLFS (Karhunen-Loève Field Sensitivity)",
+                "url": "https://github.com/Kramer84/KarhunenLoeveFieldSensitivity",
+                "description": "Extension OpenTURNS : analyse de sensibilité pour entrées mixtes (scalaires et champs stochastiques)."
+            },
+            {
+                "name": "gldpy-gpu",
+                "url": "https://github.com/Kramer84/gldpy-gpu",
+                "description": "Backend PyTorch/CUDA pour la loi lambda généralisée, publié sur PyPI. Fork de gldpy."
+            },
+            {
+                "name": "Dictation-Hub",
+                "url": "https://github.com/Kramer84/Dictation-Hub",
+                "description": "Service local de transcription vocale : whisper.cpp, détection d'activité vocale, post-traitement par LLM."
+            }
+        ],
         "publications": [
-            {"title": "IMPRECISE PROBABILITIES AS AN ANSWER TO THE INDETERMINACY INHERENT TO MECHANICAL TOLERANCES",
-            "url": "https://doi.org/10.7712/120223.10344.19792",
-            "description": "UNCECOMP 2023. U - MS 11 - UNCERTAINTY QUANTIFICATION UNDER LIMITED DATA"}
+            {
+                "title": "Imprecise probabilities as an answer to the indeterminacy inherent to mechanical tolerances",
+                "url": "https://doi.org/10.7712/120223.10344.19792",
+                "description": "UNCECOMP 2023. K. Simády, P. Beaurepaire, N. Gayton."
+            }
+        ],
+        "other_projects": [
+            {
+                "name": "FranceTerrainModels",
+                "description": "Pipeline Python : données ouvertes IGN LiDAR HD, OSM et BD TOPO vers modèles de relief étanches, imprimables en 3D. Dépôt privé, démonstration sur demande."
+            },
+            {
+                "name": "research-rag",
+                "description": "Recherche documentaire sur environ 280 articles scientifiques : extraction PDF, index vectoriel, vérification de citations, évaluation de la pertinence. Dépôt privé."
+            },
+            {
+                "name": "Carte de commande de sèche-linge",
+                "description": "Refaite de zéro sous Arduino : 7 relais, thermistances étalonnées, régulation PID, sécurités de surchauffe, PCB et journalisation Python."
+            }
         ]
-
     },
     "en": {
-        "tab_title":"K.A. Simády - Professional Profile",
+        "tab_title": "K.A. Simády - Professional Profile",
         "name": "Kristóf A. Simády",
-        "title": "PhD-Engineer | Mechanical Engineering, Simulation & Data Science",
+        "title": "R&D Engineer, PhD | Simulation & Scientific Computing",
         "location": "Clermont-Ferrand, France",
-        "summary": "PhD-Engineer with a strong capacity for abstraction, applying mathematical modeling, statistical analysis, and programming across diverse fields (mechanics, reliability, bio-engineering). I view software (Python/C++) as an agnostic tool to solve complex physical problems. Deeply involved in both theoretical research and practical, hands-on engineering and fabrication.",
+        "summary": "PhD from Université Clermont Auvergne (Institut Pascal, defended on 8 September 2026) and SIGMA Clermont engineering graduate. I work on tolerance analysis, reliability and uncertainty quantification, including when data is missing. I develop my computational tools in Python and publish them as open source. I also build and repair hardware: electronics, 3D printing, mechanics.",
         "email": "kristof.simady@protonmail.com",
-        "phone": "Contact by mail",
-        "driving_license": "Driver's License B/A2",
+        "driving_license": "Driving licence B/A2",
         "labels": {
             "skills": "Skills",
-            "networks": "Professional Networks",
-            "repos": "Selected GitHub Repositories",
-            "publications": "Publications"
+            "repos": "Open source projects",
+            "publications": "Publications",
+            "other": "Other projects"
         },
         "skills": [
-            "Python (ML & Sci)", "Cython / C++", "Data Science", "Statistical Analysis", "Numerical Simulation", "Mechanical Engineering", "Git", "DICOM", "Tolerance analysis", "Sensitivity analysis", "Linux / Bash", "Code coupling", "FreeCAD", "FEM", "LaTeX", "Uncertainty quantification"
+            "Uncertainty quantification",
+            "Sensitivity analysis",
+            "Reliability",
+            "Tolerance analysis",
+            "OpenTURNS",
+            "Numerical simulation",
+            "Siemens Simcenter / Nastran",
+            "Scientific Python",
+            "Cython / C++",
+            "PyTorch",
+            "Data Science",
+            "3D meshes",
+            "DICOM",
+            "FreeCAD",
+            "Git",
+            "Linux / Bash",
+            "LaTeX"
         ],
         "repositories": [
-            {"name": "pyfqmr-Fast-Quadric-Mesh-Reduction",
-            "url": "https://github.com/Kramer84/pyfqmr-Fast-Quadric-Mesh-Reduction",
-            "description": "High-performance 3D mesh reduction (Cython/C++). 90+ stars & available on PyPI."},
-            {"name": "otaf-Open-Tolerance-Analysis-Framework",
-            "url": "https://github.com/Kramer84/otaf",
-            "description": "Research framework for statistical tolerance analysis of over-constrained assemblies."},
-            {"name": "KarhunenLoeveFieldSensitivity",
-            "url": "https://github.com/Kramer84/KarhunenLoeveFieldSensitivity",
-            "description": "Sensitivity analysis for mixed inputs (scalar & stochastic fields)."},
-            {"name": "Dictation-Hub",
-            "url": "https://github.com/Kramer84/Dictation-Hub",
-            "description": "Local, Whisper-based, speech-to-text transcription tool, with static and AI-based post-processing, and custom event triggering."},
-            {"name": "DocPytestAgent",
-            "url": "https://github.com/Kramer84/DocPytestAgent",
-            "description": "An agent-based tool for generating test cases and documentation for Python modules. Analyzes the project structure, constructs complete prompts, gets the LLM's output, validates it against a Pydantic schema, and injects them into the source code."}
+            {
+                "name": "otaf (Open Tolerance Analysis Framework)",
+                "url": "https://github.com/Kramer84/otaf",
+                "description": "Python framework for statistical tolerance analysis of over-constrained assemblies, including under epistemic uncertainty. Grew out of my PhD.",
+                "links": [
+                    {
+                        "label": "Documentation",
+                        "url": "https://kramer84.github.io/otaf/"
+                    },
+                    {
+                        "label": "Zenodo DOI",
+                        "url": "https://doi.org/10.5281/zenodo.14639555"
+                    }
+                ]
+            },
+            {
+                "name": "pyfqmr (Fast Quadric Mesh Reduction)",
+                "url": "https://github.com/Kramer84/pyfqmr-Fast-Quadric-Mesh-Reduction",
+                "description": "High-performance 3D mesh simplification (Cython/C++), used in projects such as ComfyUI-3D-Pack and nerf2mesh. On PyPI: about 48,000 downloads a month (November 2026), 90+ GitHub stars."
+            },
+            {
+                "name": "KLFS (Karhunen-Loève Field Sensitivity)",
+                "url": "https://github.com/Kramer84/KarhunenLoeveFieldSensitivity",
+                "description": "OpenTURNS extension: sensitivity analysis for mixed inputs (scalars and stochastic fields)."
+            },
+            {
+                "name": "gldpy-gpu",
+                "url": "https://github.com/Kramer84/gldpy-gpu",
+                "description": "PyTorch/CUDA backend for the Generalized Lambda Distribution, published on PyPI. Fork of gldpy."
+            },
+            {
+                "name": "Dictation-Hub",
+                "url": "https://github.com/Kramer84/Dictation-Hub",
+                "description": "Local speech-to-text service: whisper.cpp, voice activity detection, LLM post-processing."
+            }
         ],
         "publications": [
-            {"title": "IMPRECISE PROBABILITIES AS AN ANSWER TO THE INDETERMINACY INHERENT TO MECHANICAL TOLERANCES",
-            "url": "https://doi.org/10.7712/120223.10344.19792",
-            "description": "UNCECOMP 2023. U - MS 11 - UNCERTAINTY QUANTIFICATION UNDER LIMITED DATA"}
+            {
+                "title": "Imprecise probabilities as an answer to the indeterminacy inherent to mechanical tolerances",
+                "url": "https://doi.org/10.7712/120223.10344.19792",
+                "description": "UNCECOMP 2023. K. Simády, P. Beaurepaire, N. Gayton."
+            }
+        ],
+        "other_projects": [
+            {
+                "name": "FranceTerrainModels",
+                "description": "Python pipeline: IGN LiDAR HD, OSM and BD TOPO open data to watertight, 3D-printable relief models. Private repository, demo on request."
+            },
+            {
+                "name": "research-rag",
+                "description": "Literature search over about 280 research papers: PDF extraction, vector index, citation checks, retrieval evaluation. Private repository."
+            },
+            {
+                "name": "Clothes dryer controller",
+                "description": "Rebuilt from scratch on Arduino: 7 relays, calibrated thermistors, PID control, overheat cut-offs, PCB and Python logging."
+            }
         ]
     }
 }

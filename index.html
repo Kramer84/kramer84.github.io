@@ -1,67 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-
-    <meta name="description" content="Portfolio of Kristóf Attila Simády, R&D Doctor-Engineer specializing in Simulation & Scientific Computing.">
-
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Kristóf Attila Simády - Profil Professionnel">
-    <meta property="og:description" content="Docteur-Ingénieur R&D | Simulation & Calcul Scientifique">
-    <meta property="og:image" content="./data/DSC4391.JPG">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Deliberate: for now the site is reached only through the QR code on the CV. -->
     <meta name="robots" content="noindex, nofollow">
-    <title data-key="tab_title">K.A. Simády</title>
+    <title data-key="tab_title">Kristóf A. Simády</title>
+    <meta name="description" content="Kristóf A. Simády, Docteur-Ingénieur R&amp;D : simulation et calcul scientifique.">
 
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kristóf A. Simády">
+    <meta property="og:description" content="Docteur-Ingénieur R&amp;D | Simulation &amp; Calcul Scientifique">
+    <meta property="og:image" content="https://kramer84.github.io/data/DSC_4401.png">
 
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
     <script src="script.js" defer></script>
 </head>
 <body>
+    <main class="container">
+        <img src="./data/DSC_4401.png" alt="Kristóf A. Simády" class="profile-img" width="150" height="150">
 
-
-    <div class="container">
-
-        <img src="./data/DSC_4401.png" alt="Profile Picture" class="profile-img">
-
-        <div class="lang-switcher">
-            <button onclick="switchLang('fr')">FR</button>
-            <button onclick="switchLang('en')">EN</button>
+        <div class="lang-switcher" role="group" aria-label="Langue / Language">
+            <button type="button" data-lang="fr" onclick="switchLang('fr')">FR</button>
+            <button type="button" data-lang="en" onclick="switchLang('en')">EN</button>
         </div>
 
-        <h1 data-key="name"></h1>
-        <p class="subtitle" data-key="title"></p>
+        <h1 data-key="name">Kristóf A. Simády</h1>
+        <p class="subtitle" data-key="title">Docteur-Ingénieur R&amp;D | Simulation &amp; Calcul Scientifique</p>
 
         <div class="contact-info">
-            <i class="fa-solid fa-location-dot"></i> <span data-key="location"></span><br>
-            <i class="fa-solid fa-envelope"></i> <a href="mailto:kristof.simady@protonmail.com" data-key="email"></a><br>
-            <i class="fa-solid fa-phone"></i> <span data-key="phone"></span><br>
-            <i class="fa-solid fa-car"></i> <span data-key="driving_license"></span>
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span data-key="location">Clermont-Ferrand, France</span><br>
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:kristof.simady@protonmail.com" data-key="email">kristof.simady@protonmail.com</a><br>
+            <i class="fa-solid fa-car" aria-hidden="true"></i> <span data-key="driving_license">Permis B/A2</span>
+        </div>
+
+        <div class="links">
+            <a href="https://www.linkedin.com/in/ksimady/" class="btn btn-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/Kramer84" class="btn btn-github" target="_blank" rel="noopener">GitHub</a>
         </div>
 
         <div class="summary" data-key="summary"></div>
 
-        <h2 data-key="labels.skills"></h2>
-        <div id="skills-list" class="skills-container">
-            </div>
+        <h2 data-key="labels.publications">Publications</h2>
+        <div id="publications-list"></div>
 
-        <h2 data-key="labels.networks"></h2>
-        <a href="https://www.linkedin.com/in/kristof-attila-simády-765615153/" class="btn btn-linkedin" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Kramer84" class="btn btn-github" target="_blank">GitHub</a>
+        <h2 data-key="labels.repos">Projets open source</h2>
+        <div id="repo-list"></div>
 
-        <h2 data-key="labels.publications"></h2>
-        <div id="publications-list">
-            <p style="color: #6c757d; font-size: 0.9rem;">⏳ Loading publications...</p>
-        </div>
+        <h2 data-key="labels.other">Autres projets</h2>
+        <div id="other-list"></div>
 
-        <h2 data-key="labels.repos"></h2>
-        <div id="repo-list">
-            <p style="color: #6c757d; font-size: 0.9rem;">⏳ Loading repositories...</p>
-        </div>
-    </div>
-
+        <h2 data-key="labels.skills">Compétences</h2>
+        <div id="skills-list" class="skills-container"></div>
+    </main>
 </body>
 </html>

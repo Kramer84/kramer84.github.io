@@ -112,6 +112,19 @@ class SiteTest(unittest.TestCase):
             with self.subTest(lang=lang):
                 self.assertEqual(self.index.mailto, self.data[lang]["email"])
 
+    def test_other_projects_are_parallel_safe_and_unlinked(self):
+        self.assertEqual(len(self.data["fr"]["other_projects"]), len(self.data["en"]["other_projects"]))
+        for lang in LANGS:
+            for project in self.data[lang]["other_projects"]:
+                with self.subTest(lang=lang, name=project["name"]):
+                    self.assertNotIn("url", project)
+                    self.assertNotIn("<", project["name"] + project["description"])
+
+    def test_page_stays_out_of_search_engines(self):
+        # Deliberate: the site is reached only through the QR code on the CV.
+        html = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertIn('<meta name="robots" content="noindex, nofollow">', html)
+
     def test_local_references_exist(self):
         self.assertTrue(self.index.local_refs)
         for ref in self.index.local_refs:

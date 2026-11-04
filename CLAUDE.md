@@ -4,7 +4,7 @@ Personal professional profile of Kristóf A. Simády, in French and English, ser
 
 ## Commands
 
-- Run: `python3 -m http.server 8000`, then open http://localhost:8000. The page fetches `data.json`, so opening `index.html` as a `file://` URL leaves it empty.
+- Run: `python3 -m http.server 8000`, then open http://localhost:8000. The page fetches `data.json`, so opening `index.html` as a `file://` URL shows only the name, title, contact details and links written in the HTML.
 - Check after editing content: `python3 -m json.tool data.json >/dev/null`.
 - Test: `python3 -m unittest discover tests` (static checks, standard library only).
 - Lint, install: none exist.
@@ -22,7 +22,7 @@ Personal professional profile of Kristóf A. Simády, in French and English, ser
 
 - `data.json` holds parallel `fr` and `en` trees. Change both, keeping the same keys: in `script.js`, a missing `data-key` value displays as the text `undefined`, and a missing parent object or `skills`/`repositories` list throws and stops the render.
 - Repository and publication fields go through `innerHTML` in `script.js`. Write them as valid HTML: escape `<`, and escape `&` when a letter, digit or `#` follows it.
-- The email appears twice: the `email` values in `data.json` (displayed text) and the `mailto:` in `index.html` (link target). Change them together.
-- `index.html` sets `noindex, nofollow`, so search engines are told to skip the site.
+- The email appears in `data.json` and twice in `index.html` (link target and fallback text). Change them together. The name, title and location also have fallback text in `index.html`.
+- `index.html` sets `noindex, nofollow` on purpose: for now the owner wants the site reached only through the QR code on the CV. Do not remove it or add links to the site without asking.
 
 Last validated against the real files: 2026-11-04

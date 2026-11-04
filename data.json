@@ -15,7 +15,7 @@
             "publications": "Publications"
         },
         "skills": [
-            "Python (ML & Sci)", "Cython / C++", "Data Science", "Analyse Statistique", "Simulation Numérique", "Ingénierie Mécanique", "Git", "DICOM", "Analyse des tolérances", "Analyse de sensibilité", "Linux / Bash", "Couplage", "FreeCAD", "FEM", "LaTex", "Quantification d'incertitude"
+            "Python (ML & Sci)", "Cython / C++", "Data Science", "Analyse Statistique", "Simulation Numérique", "Ingénierie Mécanique", "Git", "DICOM", "Analyse des tolérances", "Analyse de sensibilité", "Linux / Bash", "Couplage", "FreeCAD", "FEM", "LaTeX", "Quantification d'incertitude"
         ],
         "repositories": [
             {"name": "pyfqmr-Fast-Quadric-Mesh-Reduction",
@@ -57,7 +57,7 @@
             "publications": "Publications"
         },
         "skills": [
-            "Python (ML & Sci)", "Cython / C++", "Data Science", "Statistical Analysis", "Numerical Simulation", "Mechanical Engineering", "Git", "DICOM", "Tolerance analysis", "Sensitivity analysis", "Linux / Bash", "Code coupling", "FreeCAD", "FEM", "LaTex", "Uncertainty quantification"
+            "Python (ML & Sci)", "Cython / C++", "Data Science", "Statistical Analysis", "Numerical Simulation", "Mechanical Engineering", "Git", "DICOM", "Tolerance analysis", "Sensitivity analysis", "Linux / Bash", "Code coupling", "FreeCAD", "FEM", "LaTeX", "Uncertainty quantification"
         ],
         "repositories": [
             {"name": "pyfqmr-Fast-Quadric-Mesh-Reduction",
@@ -68,13 +68,13 @@
             "description": "Research framework for statistical tolerance analysis of over-constrained assemblies."},
             {"name": "KarhunenLoeveFieldSensitivity",
             "url": "https://github.com/Kramer84/KarhunenLoeveFieldSensitivity",
-            "description": "Sensitivity analysis for mixed inputs (Scalar & stochastic fields)."},
+            "description": "Sensitivity analysis for mixed inputs (scalar & stochastic fields)."},
             {"name": "Dictation-Hub",
             "url": "https://github.com/Kramer84/Dictation-Hub",
-            "description": "Local, whisper based, speech to text treanscription tool, with static and ai based post-processing, and custom event triggering."},
+            "description": "Local, Whisper-based, speech-to-text transcription tool, with static and AI-based post-processing, and custom event triggering."},
             {"name": "DocPytestAgent",
             "url": "https://github.com/Kramer84/DocPytestAgent",
-            "description": "An agent-based tool for generating test cases and documentation for Python modules. Analyzes the project structure, constructs complete prompts, gets the LLMs output, validates it against a Pydantic schema, and injects them into the source code."}
+            "description": "An agent-based tool for generating test cases and documentation for Python modules. Analyzes the project structure, constructs complete prompts, gets the LLM's output, validates it against a Pydantic schema, and injects them into the source code."}
         ],
         "publications": [
             {"title": "IMPRECISE PROBABILITIES AS AN ANSWER TO THE INDETERMINACY INHERENT TO MECHANICAL TOLERANCES",

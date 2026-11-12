@@ -16,4 +16,4 @@
 
 ## Images (`data/`)
 
-Only `profile.jpg` (300x300, made from the original `DSC_4401.png`) lives here: it is the profile picture and the `og:image`. Originals and GIMP sources are in the private repo `Kramer84/site-image-sources`. Older commits of this repo still contain them.
+Only `profile.jpg` (300x300, made by `enhance_profile.py` in the private repo from the original `DSC_4389.JPG`) lives here: it is the profile picture and the `og:image`. Originals and GIMP sources are in the private repo `Kramer84/site-image-sources`. Older commits of this repo still contain them.

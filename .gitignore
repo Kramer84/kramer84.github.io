@@ -21,3 +21,9 @@ _site/
 .DS_Store
 Thumbs.db
 *~
+
+# Local clone of the private image repo (Kramer84/site-image-sources); never commit it here
+image-sources/
+
+# Local agent rules and settings (personal, not for the public repo)
+.claude/

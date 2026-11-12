@@ -15,7 +15,7 @@ Personal professional profile of Kristóf A. Simády, in French and English, ser
 - Stay inside this folder.
 - Separate facts from hypotheses: give verified values with their source file and label hypotheses.
 - When docs and files disagree, the files win; fix the doc.
-- `data/` is public: put only images the page uses there. Originals and sources go in the private repo `Kramer84/site-image-sources`.
+- `data/` is public: put only images the page uses there. Originals and sources go in the private repo `Kramer84/site-image-sources`, cloned (git-ignored) at `image-sources/`.
 - Everything committed here is public, including the contents of `data/`. Check `git status` before any commit.
 
 ## Gotchas

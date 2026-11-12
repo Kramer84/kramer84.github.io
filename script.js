@@ -120,6 +120,5 @@ async function switchLang(lang) {
     }
 }
 
-window.onload = () => {
-    switchLang(savedLang() || browserLang());
-};
+// The script is deferred, so the DOM is ready; waiting for window.onload would also wait for the CDN.
+switchLang(savedLang() || browserLang());

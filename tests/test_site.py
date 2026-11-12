@@ -120,6 +120,13 @@ class SiteTest(unittest.TestCase):
                     self.assertNotIn("url", project)
                     self.assertNotIn("<", project["name"] + project["description"])
 
+    def test_html_summary_fallback_matches_french_summary(self):
+        # Shown when data.json fails to load, so it must not drift from the real text.
+        html = (ROOT / "index.html").read_text(encoding="utf-8")
+        match = re.search(r'<div class="summary" data-key="summary">(.*?)</div>', html, re.S)
+        self.assertIsNotNone(match)
+        self.assertEqual(match.group(1).strip(), self.data["fr"]["summary"])
+
     def test_page_stays_out_of_search_engines(self):
         # Deliberate: the site is reached only through the QR code on the CV.
         html = (ROOT / "index.html").read_text(encoding="utf-8")

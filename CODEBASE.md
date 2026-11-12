@@ -3,11 +3,12 @@
 | Path | Role | Entry point |
 |------|------|-------------|
 | `index.html` | Page skeleton: `data-key` placeholders, hardcoded social and `mailto:` links, meta tags | Served at `/` |
-| `script.js` | Fetches `data.json` and renders the selected language | `window.onload` calls `switchLang()` |
+| `script.js` | Fetches `data.json` and renders the selected language | ``switchLang()` runs at load (script is `defer`red) |
 | `data.json` | All translatable content, under `fr` and `en` | Edit this to change the profile text, skills, repos or publications |
 | `style.css` | Layout and theme; colours are variables on `:root` | Linked from `index.html` |
 | `data/` | Data, not code: images and GIMP sources | See below |
-| `tests/test_site.py` | Static checks: FR/EN parity, `data-key` coverage, card text and URLs, local references | `python3 -m unittest discover tests` |
+| `tests/test_site.py` | Static checks: FR/EN parity, `data-key` coverage, card text and URLs, local references, HTML summary fallback | `python3 -m unittest discover tests` |
+| `tests/script.test.js` | Behaviour tests for `script.js` in a Node `vm` sandbox with a fake DOM (no dependencies) | `node --test tests/script.test.js` |
 
 ## Rendering (`script.js`)
 
@@ -15,12 +16,4 @@
 
 ## Images (`data/`)
 
-| File | Status |
-|------|--------|
-| `DSC_4401.png` | Profile picture and `og:image` in `index.html` |
-| `DSC_4401.xcf` | GIMP file, not referenced by the page |
-| `DSC4391.JPG`, `DSC_4401.JPG`, `DSCGPT1.png`, `DSCGPT1BW.png`, `DSCGPT1.xcf` | Not referenced by the page |
-
-## Open questions
-
-- Which unreferenced images should go? Commit `00b7e36` says "remember the remove unused ones"; the owner has deferred this and will decide. Files stay in git history after removal, so deleting them does not unpublish them.
+Only `profile.jpg` (300x300, made from the original `DSC_4401.png`) lives here: it is the profile picture and the `og:image`. Originals and GIMP sources are in the private repo `Kramer84/site-image-sources`. Older commits of this repo still contain them.
